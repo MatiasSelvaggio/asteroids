@@ -41,7 +41,7 @@ def main():
             for shot in bullets:
                 if obj.collides_with(shot):
                     shot.kill()
-                    obj.kill()
+                    obj.split()
            
 
         for obj in drawable:
